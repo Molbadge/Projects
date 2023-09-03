@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/main-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Baskerville:ital@1&family=Sofia+Sans:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <title>My Website</title>
+</head>
+
+<body>
+    <!--Hamburger Menu icon by Icons8-->
+    <button class="nav-menu"><img src="images/icons8-hamburger-menu-50.png" alt=""></button>
+    <nav class="navbar">
+        <ul class="nava">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    <script>
+        const navMenu = document.querySelector(".nav-menu");
+        const navi = document.querySelector(".navbar");
+
+        navMenu.addEventListener('click', ()=>{
+            navi.classList.toggle('close')
+        })
+    </script>
+</body>
+
+</html>
